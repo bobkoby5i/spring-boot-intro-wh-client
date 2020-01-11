@@ -1,0 +1,43 @@
+plugins {
+	id 'org.springframework.boot' version '1.5.9.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+	id "io.swagger.core.v3.swagger-gradle-plugin" version "2.1.0"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.koby5i'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile('org.projectlombok:lombok')
+	annotationProcessor('org.projectlombok:lombok:1.18.10')
+
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-feign', version: '1.4.7.RELEASE'
+//	compile group: 'io.github.openfeign', name: 'feign-okhttp', version:'9.3.1'
+//	compile group: 'io.github.openfeign', name: 'feign-gson', version:'9.3.1'
+//	compile group: 'io.github.openfeign', name: 'feign-slf4j', version:'9.3.1'
+
+	// SWAGGER
+	compile('io.springfox:springfox-swagger2:2.7.0')
+	compile('io.springfox:springfox-swagger-ui:2.7.0')
+
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+//test {
+//	useJUnitPlatform()
+//}
