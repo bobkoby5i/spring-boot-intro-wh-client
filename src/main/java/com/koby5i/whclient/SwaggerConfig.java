@@ -20,7 +20,7 @@ import javax.annotation.PostConstruct;
 
 public class SwaggerConfig {
 
-    private static final String BASE_PACKAGE = "com.koby5i.whclient.controller";
+    private static final String BASE_PACKAGE = "com.koby5i.whclient";
 
 
     @Bean
