@@ -1,5 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '1.5.9.RELEASE'
+//	id 'org.springframework.boot' version '1.5.9.RELEASE' -- OK ale 2.2.1 error
+	id 'org.springframework.boot' version '2.2.1.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
 	id "io.swagger.core.v3.swagger-gradle-plugin" version "2.1.0"
