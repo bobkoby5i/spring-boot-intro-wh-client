@@ -24,7 +24,10 @@ dependencies {
 	compile('org.projectlombok:lombok')
 	annotationProcessor('org.projectlombok:lombok:1.18.10')
 
-	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-feign', version: '1.4.7.RELEASE'
+	//spring-cloud-starter-openfeign
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.1.RELEASE'
+
+//	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-feign', version: '1.4.7.RELEASE'
 //	compile group: 'io.github.openfeign', name: 'feign-okhttp', version:'9.3.1'
 //	compile group: 'io.github.openfeign', name: 'feign-gson', version:'9.3.1'
 //	compile group: 'io.github.openfeign', name: 'feign-slf4j', version:'9.3.1'
